@@ -1,0 +1,82 @@
+.ds-loading__ball_container {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+
+    > div {
+        animation-fill-mode: both;
+        background-color: $color-primary;
+        border-radius: 50%;
+        height: 10px;
+        position: absolute;
+        width: 10px;
+
+        &.ds-loading__ball-1,
+        &.ds-loading__ball-2,
+        &.ds-loading__ball-3 {
+            animation-delay: 0s;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        &.ds-loading__ball-1 {
+            animation-name: ball-triangle-path-1;
+            top: 50px;
+        }
+
+        &.ds-loading__ball-2 {
+            animation-name: ball-triangle-path-2;
+            left: 25px;
+        }
+
+        &.ds-loading__ball-3 {
+            animation-name: ball-triangle-path-3;
+            left: 50px;
+            top: 50px;
+        }
+    }
+}
+
+@keyframes ball-triangle-path-1 {
+    33% {
+        transform: translate(250%, -500%);
+    }
+
+    66% {
+        transform: translate(500%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes ball-triangle-path-2 {
+    33% {
+        transform: translate(250%, 500%);
+    }
+
+    66% {
+        transform: translate(-250%, 500%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes ball-triangle-path-3 {
+    33% {
+        transform: translate(-500%, 0);
+    }
+
+    66% {
+        transform: translate(-250%, -500%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

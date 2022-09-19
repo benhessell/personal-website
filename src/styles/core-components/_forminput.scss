@@ -1,0 +1,11 @@
+.ds-formfield_container {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ds-form_error-message {
+    margin: 5px 0;
+    color: $color_form-border-error;
+}

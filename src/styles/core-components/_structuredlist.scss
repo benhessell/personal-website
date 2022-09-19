@@ -1,0 +1,174 @@
+.ds-table {
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: black;
+
+	tr {
+		border: $color_structuredlist-innerborder 2px solid;
+	}
+
+	th,
+	td {
+		border: 0;
+		padding: 16px;
+		vertical-align: top;
+	}
+
+	th {
+		font-weight: 600;
+		text-align: left;
+	}
+}
+
+.ds-structured-list {
+	@extend .ds-table;
+	margin: 0;
+    box-shadow: none;
+
+	.ds-structured-list__thead .ds-structured-list__tr {
+		border-width: 0;
+		border-bottom-width: 2px;
+		border-bottom-color: $color_structuredlist-outerborder;
+	}
+
+	.ds-structured-list__tfoot .ds-structured-list__tr {
+		border-width: 16px;
+	}
+
+	.ds-structured-list__tbody .ds-structured-list__tr,
+	.ds-structured-list__tfoot .ds-structured-list__tr {
+		border-bottom-color: $color_structuredlist-innerborder;
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+
+	.ds-structured-list__tr {
+		display: table-row;
+		width: 100%;
+	}
+
+	.ds-structured-list__td,
+	.ds-structured-list__th {
+		display: table-cell;
+		padding: 16px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	.ds-structured-list-container & + & {
+		margin-top: -1px;
+
+		&--boxed {
+			margin-top: 16px;
+		}
+	}
+
+	&--mobile {
+		border-style: solid;
+		border-bottom-color: $color_structuredlist-innerborder;
+		border-bottom-width: 2px;
+
+		&:first-child {
+			border-top-color: $color_structuredlist-innerborder;
+			border-top-width: 1px;
+		}
+
+		.ds-structured-list__tr {
+			display: block;
+			border: black solid 1px;
+			border-top: none;
+		}
+
+		.ds-structured-list__td,
+		.ds-structured-list__th {
+			&:first-child {
+				display: inline-block;
+				width: 33.3%;
+				vertical-align: top;
+				font-weight: 600;
+			}
+
+			&:last-child {
+				display: inline-block;
+				width: 66.6%;
+				vertical-align: top;
+			}
+		}
+	}
+
+	&--boxed {
+		.ds-structured-list__thead .ds-structured-list__tr {
+			border-width: 1px;
+			border-bottom-width: 1px;
+			border-color: 1px;
+		}
+
+		.ds-structured-list__tbody .ds-structured-list__tr,
+		.ds-structured-list__tfoot .ds-structured-list__tr {
+			border-left-width: 1px;
+			border-right-width: 1px;
+			border-color: 1px;
+		}
+
+		.ds-structured-list__td,
+		.ds-structured-list__th {
+			&:first-child {
+				padding-left: 16px;
+			}
+
+			&:last-child {
+				padding-right: 16px;
+			}
+		}
+	}
+
+	&--flat {
+		.ds-structured-list__tbody {
+			display: table;
+			width: 100%;
+		}
+
+		.ds-structured-list__tr,
+		.ds-structured-list__tr:first-child {
+			border-color: $color_structuredlist-outerborder;
+			border-width: 1px;
+			border-style: solid;
+		}
+
+		.ds-structured-list__th,
+		.ds-structured-list__td {
+			&:first-child {
+				font-weight: 600;
+			}
+
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
+
+	&--vertical-align-middle {
+		.ds-structured-list__th,
+		.ds-structured-list__td {
+			vertical-align: middle;
+		}
+
+		&.ds-structured-list--mobile .ds-structured-list__tr {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.ds-structured-list-container + .ds-structured-list-title {
+	margin-top: 16px;
+	border: black solid 1px;
+	padding-top: 16px * 2;
+}

@@ -1,0 +1,32 @@
+// assets
+@import 'assets/colors';
+@import 'assets/variables';
+@import 'assets/fonts';
+
+// shell
+@import 'shell/app';
+@import 'shell/nav';
+@import 'shell/footer';
+@import 'shell/main';
+
+// core-components
+@import 'core-components/accordion';
+@import 'core-components/headings';
+@import 'core-components/input';
+@import 'core-components/button';
+@import 'core-components/loader';
+@import 'core-components/grid';
+@import 'core-components/structuredlist';
+@import 'core-components/checkbox';
+@import 'core-components/tabaccordion';
+@import 'core-components/forminput';
+@import 'core-components/card';
+@import 'core-components/logo';
+@import 'core-components/searchbar';
+@import 'core-components/svg';
+
+// components
+
+
+// pages
+@import 'pages/home';

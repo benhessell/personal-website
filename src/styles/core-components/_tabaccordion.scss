@@ -1,0 +1,34 @@
+.ds-tab-accordion_header {
+	background-color: white;
+	border: 2px $color_primary solid;
+	border-bottom: 1px $color_primary solid;
+}
+
+.ds-tab-accordion_header-button {
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 10px;
+	text-align: left;
+}
+
+.ds-tab-accordion_content {
+	border: 2px $color_primary solid;
+	border-bottom: 1px $color_primary solid;
+	display: none;
+	padding: 10px;
+	background-color: white;
+
+	&--open {
+		display: block;
+	}
+
+	p {
+		margin: none;
+	}
+}
+
+.ds-tab_header {
+	display: inline-block;
+}

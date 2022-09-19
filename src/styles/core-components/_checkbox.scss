@@ -1,0 +1,82 @@
+.ds-checkbox {
+    position: absolute;
+    left: 0;
+    opacity: 0.01;
+  }
+  
+  .ds-checkbox_label {
+      position: relative;
+      padding-left: 2.3em;
+      font-size: 1.05em;
+      line-height: 1.7;
+      cursor: pointer;
+  
+      &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1.4em;
+          height: 1.4em;
+          border: 1px solid black;
+          background: white;
+          border-radius: .2em;
+          -webkit-transition: all .275s;
+              transition: all .275s;
+      }
+
+      &:after {
+        content: '✕';
+        position: absolute;
+        top: .6em;
+        left: .19em;
+        font-size: 1.2em;
+        color: $color_checkbox-cross;
+        line-height: 0;
+        -webkit-transition: all .2s;
+            transition: all .2s;
+      }
+  }
+
+
+.ds-checkbox:not(:checked) + .ds-checkbox_label:after {
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(45deg);
+      transform: scale(0) rotate(45deg);
+}
+
+.ds-checkbox:checked + .ds-checkbox_label:after {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0);
+      transform: scale(1) rotate(0);
+}
+
+.ds-checkbox:disabled + .ds-checkbox_label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #e9e9e9;
+}
+
+.ds-checkbox:disabled:checked + .ds-checkbox_label:after {
+  color: #777;
+}
+
+.ds-checkbox:disabled + .ds-checkbox_label {
+  color: #aaa;
+}
+
+.ds-checkbox:hover + .ds-checkbox_label:before {
+  box-shadow: 0px 0px 0px 1px $color_form-hover inset;
+}
+
+.ds-checkbox_error + .ds-checkbox_label:before {
+  border: $color_form-border-error;
+  box-shadow: 0px 0px 0px 1px $color_form-border-error inset;
+  background-color: $color_form-error;
+}
+
+.ds-checkbox_title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}

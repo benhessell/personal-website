@@ -1,0 +1,36 @@
+.ds-input_label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.ds-input {
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0;
+    border: 1px black solid;
+    padding-left: 8px;
+    box-sizing: border-box;
+
+    &:hover {
+        box-shadow: 0px 0px 0px 1px $color_form-hover inset;
+    }
+
+    &:active {
+        box-shadow: 0px 0px 0px 1px $color_form-hover inset;
+    }
+}
+
+.ds-input_error {
+    border: 2px solid $color_form-border-error;
+    background-color: $color_form-error;
+
+    &:hover {
+        box-shadow: 0px 0px 0px 1px $color_form-border-error inset;
+    }
+
+    &:active {
+        box-shadow: 0px 0px 0px 1px $color_form-border-error inset;
+    }
+}

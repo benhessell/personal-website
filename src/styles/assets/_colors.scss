@@ -1,0 +1,34 @@
+// General Colors
+$color_white: rgb(238, 237, 236);
+$color_dark-blue: rgb(3, 3, 82);
+$color_light-blue: rgba(175, 175, 236, 0.9);
+$color_black: black;
+$color_red: rgb(151, 5, 5);
+$color_green: rgba(63, 189, 63, 0.8);
+
+// Main App Colors
+$color_primary: $color_dark-blue;
+$color_secondary: $color_white;
+$color_tertiary: $color_green;
+
+$color_nav: $color_primary;
+$color_main: $color_secondary;
+$color_footer: $color_black;
+
+// Component colors
+$color_tabaccordion-border: $color_primary;
+
+$color_structuredlist-outerborder: $color_primary;
+$color_structuredlist-innerborder: $color_light-blue;
+$color_structuredlist-headertext:  $color_primary;
+
+$color_card-border: $color_primary;
+
+
+
+// Form colors
+$color_form-error: rgb(255, 208, 208);
+$color_form-border-error: $color_red;
+$color_form-hover: $color_primary;
+$color_checkbox-cross: $color_primary;
+

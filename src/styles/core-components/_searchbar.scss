@@ -1,0 +1,28 @@
+.ds-searchbar {
+    border: 1px black solid;
+    border-radius: 20px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height: 35px;
+    background-color: $color-secondary;
+
+    .ds-searchbar_input {
+        border: none;
+        height: 100%;
+        padding: none;
+        margin: none;
+        background-color: transparent;
+        outline: none;
+        padding-inline-start: 42px;
+        position: relative;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .ds-searchbar_svg {
+        position: absolute;
+        top: 4px;
+        left: 10px;
+    }
+}

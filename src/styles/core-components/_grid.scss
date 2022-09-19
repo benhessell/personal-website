@@ -1,0 +1,62 @@
+// Grids
+
+.col2 {
+    display: flex;
+
+    .col {
+        width: 50%;
+    }
+}
+
+.col3 {
+    display: flex;
+
+    .col {
+        width: 33.3%;
+    }
+}
+
+.col4 {
+    display: flex;
+
+    .col {
+        width: 25%;
+    }
+}
+
+.col121 {
+    display: flex;
+
+    .col1 {
+        width: 25%;
+    }
+
+    .col2 {
+        width: 50%;
+    }
+}
+
+.col12 {
+    display: flex;
+
+    .col1 {
+        width: 33.3%;
+    }
+
+    .col2 {
+        width: 66.7%;
+    }
+}
+
+
+.b {
+    background-color: blue;
+    height: 100px;
+    width: 50%;
+}
+
+.r {
+    background-color: red;
+    height: 100px;
+    width: 50%;
+}

@@ -1,0 +1,46 @@
+.ds-accordion {
+    width: 100%;
+}
+
+.ds-accordion_section {
+    padding: 8px 30px;
+    width: 100%;
+    background-color: $color-primary;
+    color: white;
+}
+
+.ds-accordion_header {
+    font-size: 19px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .ds-svg {
+        fill: white;
+    }
+
+    &:hover {
+        span {
+            border-bottom: white solid 1px;
+        }
+    }
+}
+
+.ds-accordion-open {
+    
+    .ds-accordion_header {
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+
+        span {
+            border-bottom: white solid 1px;
+        }
+    }
+
+    .ds-accordion_content {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-bottom: 20px
+    }
+}
