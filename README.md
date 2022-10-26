@@ -30,3 +30,8 @@ Add a test in the same folder as the script, see example in pages/Home.
 
 ### Styles
 Every styles file you create, add it to the index.scss file. Assets contain base colors, fonts and variables
+
+### Extras
+For working on work mac: do 'nvm use 12.22.10' in order to handle node-sass
+Otherwise you get error like:
+'Node Sass does not yet support your current environment: OS X Unsupported architecture (arm64) with Unsupported runtime (93)'

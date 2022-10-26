@@ -8,4 +8,3 @@ export default function Logo() {
         </div>
     );
 }
-// looks small and without border in site, but just becuase its not behind a blue background.

@@ -26,9 +26,11 @@
 }
 
 .ds-logo {
-  color: white;
-  padding: 10px;
+  color: $color_primary;
+  padding: 14px;
   margin: 10px;
-  background-color: $color_primary;
+  background-color: white;
   display: inline-block;
+  border: $color_primary 1px solid;
+  font-weight: 600;
 }

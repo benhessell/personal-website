@@ -3,6 +3,7 @@ import React from 'react'
 export default function Footer() {
     return (
           <div className="footer">
+              <div className="footer_banner" />
               <div className="footer_description">
                 <h4>Contact</h4>
                 <p className="footer_details">Developed and designed by Ben Hessell</p>

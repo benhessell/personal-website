@@ -1,40 +1,78 @@
 .nav_container {
     background-color: $color_nav;
-    // height: $nav_height;
+    height: $nav_height;
     box-sizing: border-box;
+    padding: 0 20px;
 
     .nav {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
         font-size: 20px;
-        color: white;
-
-        .nav_options {
-            width: 50%;
-            padding: 20px;
-
-            p {
-                margin: 0;
-            }
-        }
-
-        .nav_login {
-            color: white;
-            text-decoration: none;
-        }
+        border-bottom: 1px solid $color_primary;
+        padding: 15px 0;
     }
 
-    .nav_title{
-        width:50%;
-        display: flex;
-        justify-content: flex-end;
-        padding: 20px;
-        margin: 0;
-
-        p {
-            margin: 0;
-        }
-
+    .nav_btn {
+        margin-left: 20px;
+        font-size: 15px;
+        width: 130px;
     }
+}
+
+.nav_mobile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: width .3s;
+
+    &--open {
+        width: 100%;
+      }
+}
+
+.nav_mobile-modal-top {
+    height: $nav_height;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.nav_mobile-modal-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+    border-bottom: 1px solid #030352;
+    padding: 15px 0;
+}
+
+.nav_mobile-modal--open {
+    width: 100%;
+}
+
+.nav_mobile-modal-link-container {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+
+}
+
+.nav_mobile-modal-link {
+    padding: 10px 100px;
+    color: $color_primary;
+    font-size: 24px;
+    cursor: pointer;
+    width: 1000px;
+
+    &:hover {
+        border: $color_primary 1px solid;
+    }
+
+    &:active {
+        border: $color_primary 2px solid;
+    }
+
 }

@@ -1,0 +1,66 @@
+
+.projects-banner_container {
+    background-color: $color-primary;
+    height: 500px;
+    text-align: center;
+    padding: 200px 200px 30px 200px;
+}
+
+.projects-banner_heading {
+    color: white;
+    font-size: 100px;
+    margin: 0;
+    font-weight: 100;
+    margin-inline-start: 0;
+}
+
+.projects-banner_description {
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+
+@media (max-width: $screen_size-medium) {
+    .projects-banner_container {
+        padding: 200px $left-side_indent-medium 30px $left-side_indent-medium;
+    }
+
+    .projects-banner_heading {
+        font-size: 90px;
+    }
+
+    .projects-banner_description {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: $screen_size-small) {
+    .projects-banner_container {
+        padding: 200px $left-side_indent-x-small 30px $left-side_indent-x-small;
+    }
+
+    .projects-banner_heading {
+        font-size: 80px;
+    }
+
+    .projects-banner_description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: $screen_size-x-small) {
+    .projects-banner_container {
+        padding: 200px $left-side_indent-x-x-small 30px $left-side_indent-x-x-small;
+    }
+
+    .projects-banner_heading {
+        font-size: 70px;
+    }
+
+    .projects-banner_description {
+        font-size: 18px;
+    }
+}

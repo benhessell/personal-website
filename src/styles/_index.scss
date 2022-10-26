@@ -23,10 +23,18 @@
 @import 'core-components/card';
 @import 'core-components/logo';
 @import 'core-components/searchbar';
-@import 'core-components/svg';
 
 // components
+@import 'components/welcomebanner';
+@import 'components/projectsbanner';
 
+// svg
+@import 'svg/svg';
+@import 'svg/burgermenu';
+@import 'svg/cross';
 
 // pages
 @import 'pages/home';
+@import 'pages/projects';
+@import 'pages/education';
+@import 'pages/tools';
