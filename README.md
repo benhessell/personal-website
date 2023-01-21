@@ -4,6 +4,7 @@
 This template is for react apps with no back-end set up
 
 ### Set Up
+Need to use node v16 to run this. Get nvm then do 'nvm use 16'.
 To install dependencies do 'yarn', not npm install.
 To add a dependency use 'yarn add xxxx' or 'yarn add --dev xxxx', not npm install xxxx.
 Might need to install serve globally to test the build state (yarn global add serve)
