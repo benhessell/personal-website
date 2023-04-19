@@ -1,5 +1,6 @@
 .ds-accordion {
     width: 100%;
+    cursor: pointer;
 }
 
 .ds-accordion_section {
@@ -43,4 +44,26 @@
         border-bottom-right-radius: 20px;
         padding-bottom: 20px
     }
+}
+
+.ds-accordion-inverse {
+    border: 2px solid $color-primary;
+
+    .ds-accordion_section {
+        background-color: white;
+        color: $color-primary;
+    }
+
+    &:hover {
+        span {
+            border-bottom: $color-primary solid 1px;
+        }
+    }
+
+    .ds-accordion_header {
+        .ds-svg {
+            fill: $color-primary;
+        }
+    }
+    
 }

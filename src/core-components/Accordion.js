@@ -8,6 +8,7 @@ const Accordion = props => {
 		className,
 		header,
         content,
+		inverse,
 		...extraProps
 	} = props;
 
@@ -36,6 +37,7 @@ const Accordion = props => {
         'ds-accordion',
         {
             'ds-accordion-open': sectionOpen,
+			'ds-accordion-inverse': inverse,
         }
     );
 
